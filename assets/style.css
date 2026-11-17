@@ -247,6 +247,7 @@ a:hover { text-decoration: underline; }
 }
 
 .card p { font-size: 14px; color: var(--muted); }
+.card p + p { margin-top: 8px; }
 
 .link-mono {
   font-family: 'IBM Plex Mono', monospace;
