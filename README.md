@@ -39,4 +39,4 @@ When ortuttnauer.com is ready to move from WordPress.com:
 2. At the DNS provider, point the apex domain to GitHub Pages (A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and `www` as a CNAME to `ortutt.github.io`.
 3. Once the certificate is issued, tick **Enforce HTTPS**.
 
-The syllabus PDFs on the Teaching page are still loaded from `ortuttnauer.wordpress.com/wp-content/uploads/…`. Copy them into `assets/` and update the links before closing the WordPress site.
+All images and syllabus PDFs live in `assets/` (syllabi in `assets/syllabi/`), so nothing depends on WordPress any more.
