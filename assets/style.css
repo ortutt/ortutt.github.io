@@ -323,6 +323,32 @@ details.card > .prose { padding: 18px 22px 22px; font-size: 14.5px; }
 }
 .button:hover { background: var(--gold); border-color: var(--gold); color: var(--navy); text-decoration: none; }
 
+/* ── CV page ── */
+.cv-current {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  background: var(--tint);
+  border-left: 3px solid var(--gold);
+  border-radius: 4px;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+}
+.cv-current p { font-size: 14px; color: var(--muted); margin: 0; flex: 1 1 320px; }
+.cv-frame {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  min-height: 600px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--tint);
+}
+.cv-fallback { padding: 24px; font-size: 14px; color: var(--muted); }
+@media (max-width: 640px) { .cv-frame { height: 70vh; min-height: 420px; } }
+
 /* ── Footer ── */
 .page-footer {
   text-align: center;
