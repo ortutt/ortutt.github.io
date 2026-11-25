@@ -31,12 +31,12 @@ Research projects use native `<details>`/`<summary>` elements, so they collapse 
 </details>
 ```
 
-## Moving the domain
+## Domain
 
-When ortuttnauer.com is ready to move from WordPress.com:
+The site is served at **ortuttnauer.com** (set by the `CNAME` file). The domain is registered with WordPress.com and kept as a domain-only site there; its DNS records point to GitHub Pages:
 
-1. Add a file named `CNAME` containing `ortuttnauer.com` (or set it under Settings → Pages → Custom domain).
-2. At the DNS provider, point the apex domain to GitHub Pages (A records `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and `www` as a CNAME to `ortutt.github.io`.
-3. Once the certificate is issued, tick **Enforce HTTPS**.
+- `A` records for the root domain: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+- `CNAME` for `www` → `ortutt.github.io`
+- `TXT` for `_atproto` (Bluesky handle verification) — keep this record
 
-All images and syllabus PDFs live in `assets/` (syllabi in `assets/syllabi/`), so nothing depends on WordPress any more.
+All images and syllabus PDFs live in `assets/` (syllabi in `assets/syllabi/`), so nothing depends on WordPress.
